@@ -1,0 +1,8 @@
+BACKLOG
+
+-	Setup Kotlin project with Gradle
+-	Run Spring Boot
+-	Use JPA with SQLite
+-	Database scheme
+-	DB dump/restore scripts
+-	Liquibase
