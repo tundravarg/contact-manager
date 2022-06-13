@@ -7,10 +7,15 @@
 *.iml
 
 # VSCode
-.vscode/
+# .vscode/
 .DS_Store
 
 # Eclipse
 .project
 .classpath
 .settings
+
+# Gradle
+.gradle
+bin/
+build/
