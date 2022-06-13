@@ -7,7 +7,7 @@
 *.iml
 
 # VSCode
-.vscode/
+# .vscode/
 .DS_Store
 
 # Eclipse
