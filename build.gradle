@@ -14,4 +14,20 @@ application {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter:2.7.0'
     implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
+    implementation 'com.h2database:h2:2.1.214'
+}
+
+
+task h2server(type: Exec) {
+    group "application"
+    description "Init Data Base"
+
+    def h2Jar = configurations.runtimeClasspath.files.findResult { it.name.startsWith("h2") ? it : null }
+    def dbFile = "./data/db.h2"
+    def userName = "sa"
+
+    commandLine "java" ,
+            "-jar", h2Jar,
+            "-url", "jdbc:h2:file:$dbFile;AUTO_SERVER=true",
+            "-user", userName
 }
