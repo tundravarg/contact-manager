@@ -16,6 +16,9 @@
 .settings
 
 # Gradle
+gradle
+gradlew
+gradlew.bat
 .gradle
 bin/
 build/
