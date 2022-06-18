@@ -8,5 +8,10 @@ repositories {
 }
 
 application {
-    mainClass = 'MainKt' 
+    mainClass = 'contactmanager.MainKt' 
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.7.0'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
 }
