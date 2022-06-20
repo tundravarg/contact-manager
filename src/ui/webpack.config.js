@@ -15,6 +15,7 @@ module.exports = env => {
             filename: 'contact-manager.js',
             path: TARGET,
         },
+        devtool: 'source-map',
         plugins: [
             new CopyPlugin({
                 patterns: [

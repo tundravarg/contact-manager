@@ -7,7 +7,7 @@
   "private": "true",
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch --progress --env watch=1"
+    "watch": "webpack --mode development --watch --progress --env watch=1"
   },
   "dependencies": {
     "jquery": "^3.6.0"
