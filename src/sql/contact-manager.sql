@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS contacts;
 CREATE TABLE contacts (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTOINCREMENT,
     name text,
     primary_name text,
     secondary_name text,
@@ -9,7 +9,7 @@ CREATE TABLE contacts (
 
 DROP TABLE IF EXISTS contact_values;
 CREATE TABLE contact_values (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTOINCREMENT,
     "type" text,
     subtype text,
     "value" text
