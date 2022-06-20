@@ -1,0 +1,7 @@
+spring.datasource:
+  driver-class-name: org.h2.Driver
+  url: jdbc:h2:file:./data/db.h2;database_to_upper=false
+  username: re
+  password: rerere
+#  schema: classpath:sql/schema.sql
+#  initialization-mode: always
