@@ -28,11 +28,16 @@ dependencies {
 sourceSets {
     main {
         resources {
-            srcDir "src/ui"
+            srcDirs "src/ui", "build/ui"
         }
     }
 }
 
+task buildUi(type: Exec) {
+    group "build"
+    description "Build UI"
+    commandLine "sh", "build-ui.sh"
+}
 
 //task h2server(type: Exec) {
 //    group "application"
