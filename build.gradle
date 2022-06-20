@@ -39,6 +39,8 @@ task buildUi(type: Exec) {
     commandLine "sh", "build-ui.sh"
 }
 
+processResources.dependsOn buildUi
+
 //task h2server(type: Exec) {
 //    group "application"
 //    description "Init Data Base"
