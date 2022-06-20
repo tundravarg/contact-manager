@@ -1,14 +1,18 @@
 BACKLOG
 
+
 > Planned
 
-%	Use JPA with SQLite
--	Database scheme
--	DB dump/restore scripts
 -	Liquibase
+-	UI: Basic
+-	UI: React
+
 
 > Completed
 
 +	Setup Kotlin project with Gradle
 +	Run Spring Boot
 +	Empty REST Controller
++	Use JPA with SQLite
++	Database scheme
+X	DB dump/restore scripts
