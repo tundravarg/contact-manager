@@ -12,16 +12,17 @@ application {
 }
 
 dependencies {
+    // Core
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.7.0'
+    // Libs
+//    implementation 'com.h2database:h2:2.1.214'
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+    implementation 'com.zsoltfabok:sqlite-dialect:1.0'
+    // Spring Boot
     implementation 'org.springframework.boot:spring-boot-starter:2.7.0'
     implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.0'
     implementation 'org.springframework.boot:spring-boot-starter-json:2.7.0'
-//    implementation 'com.h2database:h2:2.1.214'
-    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
-    implementation 'com.zsoltfabok:sqlite-dialect:1.0'
-    implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
-    implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
 }
 
 
