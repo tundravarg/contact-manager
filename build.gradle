@@ -36,7 +36,7 @@ sourceSets {
 task buildUi(type: Exec) {
     group "build"
     description "Build UI"
-    commandLine "sh", "build-ui.sh"
+    commandLine "sh", "ui-build.sh"
 }
 
 processResources.dependsOn buildUi
