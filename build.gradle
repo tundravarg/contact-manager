@@ -25,6 +25,21 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-json:2.7.0'
 }
 
+sourceSets {
+    main {
+        resources {
+            srcDirs "build/ui"
+        }
+    }
+}
+
+task buildUi(type: Exec) {
+    group "build"
+    description "Build UI"
+    commandLine "sh", "ui-build.sh"
+}
+
+processResources.dependsOn buildUi
 
 //task h2server(type: Exec) {
 //    group "application"

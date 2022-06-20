@@ -1,0 +1,20 @@
+{
+  "name": "contact-manager",
+  "version": "1.0.0",
+  "description": "Contact Manager UI",
+  "author": "Sergey Tumanov",
+  "license": "ISC",
+  "private": "true",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --mode development --watch --progress --env watch=1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

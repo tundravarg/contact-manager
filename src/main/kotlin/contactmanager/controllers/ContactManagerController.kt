@@ -4,10 +4,12 @@ package contactmanager.controllers
 import contactmanager.entities.ContactEntity
 import contactmanager.services.ContactManagerService
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 
-@RestController
+@RestController()
+@RequestMapping("/api")
 class ContactManagerController(
     val contactManagerService: ContactManagerService
 ) {
