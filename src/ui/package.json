@@ -6,7 +6,8 @@
   "license": "ISC",
   "private": "true",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch --progress"
   },
   "dependencies": {
     "jquery": "^3.6.0"
