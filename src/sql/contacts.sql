@@ -1,4 +1,10 @@
-SELECT c.*, v.*
+---- Enable FKs
+PRAGMA foreign_keys = ON;
+
+
+---- Select Contacts
+
+SELECT * -- c.*, v.*
 FROM "contacts" AS c
 LEFT JOIN contact_values_link AS cvl ON cvl.contact_id = c.id
 LEFT JOIN contact_values AS v ON v.id = cvl.value_id
@@ -25,9 +31,9 @@ WITH
         WHERE v.id != vcount.maxid
         ORDER BY v.type, v.subtype, v.value
     )
-SELECT * FROM todel
+-- SELECT * FROM todel
 -- DELETE FROM contact_values_link WHERE value_id IN todel
--- DELETE FROM contact_values WHERE id IN todel
+DELETE FROM contact_values WHERE id IN todel
 ;
 
 

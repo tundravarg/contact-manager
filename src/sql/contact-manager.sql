@@ -19,6 +19,10 @@ DROP TABLE IF EXISTS contact_values_link;
 CREATE TABLE contact_values_link (
     contact_id integer,
     value_id integer,
-    FOREIGN KEY (contact_id) REFERENCES contacts (id),
+    FOREIGN KEY (contact_id) REFERENCES contacts (id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
     FOREIGN KEY (value_id) REFERENCES contact_values (id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
 );
