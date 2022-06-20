@@ -25,6 +25,14 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-json:2.7.0'
 }
 
+sourceSets {
+    main {
+        resources {
+            srcDir "src/ui"
+        }
+    }
+}
+
 
 //task h2server(type: Exec) {
 //    group "application"
