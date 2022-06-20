@@ -22,3 +22,6 @@ gradlew.bat
 .gradle
 bin/
 build/
+
+# Data
+data/
