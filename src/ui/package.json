@@ -6,7 +6,7 @@
   "license": "ISC",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "dependencies": {
     "jquery": "^3.6.0"
