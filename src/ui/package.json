@@ -1,0 +1,11 @@
+{
+  "name": "contact-manager",
+  "version": "1.0.0",
+  "description": "Contact Manager UI",
+  "author": "Sergey Tumanov",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
