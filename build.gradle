@@ -28,7 +28,7 @@ dependencies {
 sourceSets {
     main {
         resources {
-            srcDirs "src/ui", "build/ui"
+            srcDirs "build/ui"
         }
     }
 }
