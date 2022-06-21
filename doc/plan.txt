@@ -3,9 +3,9 @@ BACKLOG
 
 > Planned
 
+%	UI: Angular
+P	UI: React
 -	Liquibase
-+	UI: Basic
--	UI: React
 
 
 > Completed
@@ -16,3 +16,4 @@ BACKLOG
 +	Use JPA with SQLite
 +	Database scheme
 X	DB dump/restore scripts
++	UI: Basic

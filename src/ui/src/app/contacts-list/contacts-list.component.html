@@ -1,0 +1,15 @@
+<h2>Contacts</h2>
+<table>
+    <tr>
+        <th>Contact</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Second Name</th>
+    </tr>
+    <tr *ngFor="let contact of contacts">
+        <td>{{contact.name}}</td>
+        <td>{{contact.primaryName}}</td>
+        <td>{{contact.middleName}}</td>
+        <td>{{contact.secondaryName}}</td>
+    </tr>
+</table>
