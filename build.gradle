@@ -1,6 +1,7 @@
 plugins {
     id "org.jetbrains.kotlin.jvm" version "1.7.0"
     id "application"
+    id "com.github.node-gradle.node" version "3.3.0"
 }
 
 repositories {
@@ -33,10 +34,11 @@ sourceSets {
     }
 }
 
-task buildUi(type: Exec) {
+task buildUi(type: NpmTask) {
     group "build"
     description "Build UI"
-    commandLine "sh", "ui-build.sh"
+    workingDir = file("./src/ui")
+    args = ["run", "build"]
 }
 
 processResources.dependsOn buildUi
